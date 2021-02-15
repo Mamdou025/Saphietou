@@ -1,102 +1,58 @@
-body,html{
-					height: 100%;
-					background: gold;
-	   // display: flex;  remove responsive style
+html {
+  background-color: #000;
 }
-
-.container{
-					display: flex;
-					height: 100%;
-					align-items: center;
-					justify-content: center;
-					transform: scale(0.92);
+body,
+html,
+.happy-valentines {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
 }
-
-.two.two{
-					transform: scaleX(-1);
-					border-right: 14px solid gold;
-					background: url(https://i.ibb.co/BwgCvtL/17201142-1328795950511102-1439829886722829286-n.jpg) -40px 150px / 77% no-repeat;
-
-	.bottom{
-				background: url(https://i.ibb.co/zmyDrnY/26113791-1614847465239281-501393107784835876-n.jpg) 222px -111px / 66% no-repeat;
-							&::after{
-								background: url(https://i.ibb.co/hHyb4jw/149244530-434776801181532-4026030294202586131-n.jpg) center/156% no-repeat;
-							}
-			}
-			.middle{
-							background: url(https://i.ibb.co/RHf1TW6/148424509-464587831574598-8162024147960471046-n.jpg) -30px -20px /cover no-repeat
-			}
-			.top{
-						background: url(https://i.ibb.co/hHyb4jw/149244530-434776801181532-4026030294202586131-n.jpg) right / 57% no-repeat;
-								&::after{
-											background: url(https://i.ibb.co/P4j0NcB/150213652-121622803204448-270454604778332604-n.jpg) center / 100% no-repeat
-							 }
-			}
+.happy-valentines {
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  transition: all 1s ease;
+  position: absolute;
+  text-align: center;
+  top: 100px;
+  margin: -0.5em auto 0 auto;
+  color: #ff81fc;
+  -webkit-text-shadow: 0 -1px 1px #fff, 0 1px 1px #fff;
+  -moz-text-shadow: 0 -1px 1px #fff, 0 1px 1px #fff;
+  text-shadow: 0 -1px 1px #fff, 0 1px 1px #fff;
+  font-family: 'La Belle Aurore', cursive;
+  opacity: 0;
+  font-size: 10em;
+  -webkit-filter: blur(0.2em);
 }
-.wrap{
-				width: 600px;
-				height: 650px;
-				position:relative;
-				overflow: hidden;
-				background:  url(https://i.ibb.co/BwgCvtL/17201142-1328795950511102-1439829886722829286-n.jpg) -300px -100px / cover no-repeat;
-
+.happy-valentines:hover,
+.start {
+  opacity: 1;
+  font-size: 2em;
+  -webkit-filter: blur(0.02em);
+  -moz-filter: blur(0.02em);
+  filter: blur(0.02em);
 }
-
-.top{
-				width: 660px;
-    height: 270px;
-    position: absolute;
-    z-index: 2;
-    -webkit-transform: rotate(-10deg);
-    transform: rotate(-10deg);
-    top: -90px;
-    left: -66px;
-    border: 14px solid gold;
-    overflow: hidden;
-	   background:  url(https://i.ibb.co/zFwG0Y0/149041191-904201630382791-1988405378555774657-n.jpg) 250px center / 80% no-repeat;
-
-			&::after{
-				content: " ";
-				display: block;
-				width: 300px;
-				height:300px;
-				border: 14px solid gold;
-				transform: rotate(-5deg);
-				background:  url(https://i.ibb.co/tCCpqr0/49178431-2076187645771925-3573021166564016128-o.jpg) -50px 0px / cover no-repeat;
-			}
+.dribbble {
+  position: fixed;
+  display: block;
+  right: 20px;
+  bottom: 20px;
 }
-
-.middle{
-				width: 320px;
-    height: 400px;
-    position: absolute;
-    right: -110px;
-    top: 132px;
-    z-index: 1;
-    transform: rotate(8deg);
-    border: 14px solid gold;
-	 background:  url(https://i.ibb.co/dPDc074/149055761-868675283703316-125725845264828174-n.jpg) -100px top / cover no-repeat;
+.dribbble img {
+  display: block;
+  height: 28px;
 }
-
-.bottom{
-		 z-index: 2;
-    width: 700px;
-    height: 270px;
-    position: absolute;
-    transform: rotate(5deg);
-    bottom: -90px;
-    right: -80px;
-    border: 14px solid gold;
-    overflow: hidden;
-    background:  url(https://i.ibb.co/N6Yztpg/150148646-2893745417527482-2652475266401370713-n.jpg) 150px -250px/ 80% no-repeat;
-
-			&::after{
-			 content: " ";
-    display: block;
-    width: 300px;
-    height: 300px;
-    border: 14px solid gold;
-    transform: translate(-70px,-65px) rotate(17deg);
-				background:  url(https://i.ibb.co/1L2BGc9/148551156-425224535358790-2310696018353579660-n.jpg) 50px -40px / cover no-repeat;
-			}
+.twitter {
+  position: fixed;
+  display: block;
+  right: 64px;
+  bottom: 14px;
+}
+.twitter svg {
+  width: 32px;
+  height: 32px;
+  fill: #1da1f2;
 }
